@@ -35,11 +35,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
 
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          submodules: recursive   
-
       - name: Create passwords file
         working-directory: first_app_server
         shell: bash
