@@ -12,6 +12,7 @@ on:
         options:
           - 'staging'
           - 'production'
+        
 jobs:
   deploy:
     name: Deploy to AWS
